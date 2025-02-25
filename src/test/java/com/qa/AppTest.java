@@ -2,6 +2,7 @@ package com.qa;
 
 import org.junit.jupiter.api.Test;
 import static com.qa.App.sayHello;
+import static com.qa.App.sayHelloToSomeone;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -42,5 +43,14 @@ public class AppTest
         actualResponse = sayHello();
         // Assert
         assertEquals( expectedResponse, actualResponse);
+    }
+
+    @Test
+    public void test_sayHello_should_return_Hello_Name(){
+        String result = "";
+        result = sayHelloToSomeone(" Paul");
+        String expected = "Hello Paul";
+
+        assertEquals(expected, result);
     }
 }

@@ -25,6 +25,6 @@ public class App
     }
 
     public static String sayHelloToSomeone(String name){
-        return "Hello " + name ;
+        return "Hello " + name.trim() ;
     }
 }
