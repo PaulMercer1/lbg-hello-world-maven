@@ -48,7 +48,7 @@ public class AppTest
     @Test
     public void test_sayHello_should_return_Hello_Name(){
         String result = "";
-        result = sayHelloToSomeone(" Paul");
+        result = sayHelloToSomeone("Paul");
         String expected = "Hello Paul";
 
         assertEquals(expected, result);
